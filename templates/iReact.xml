@@ -1,0 +1,122 @@
+<templateSet group="iReact">
+  <template name="constructor" value="constructor(props) {&#10;    super(props);&#10;    $END$&#10;}&#10;" description="Adds a default constructor for the class that contains props as arguments" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="constructorcontext" value="constructor(props, context) {&#10;    super(props, context);&#10;    $END$&#10;}&#10;" description="Adds a default constructor for the class that contains props and context as arguments" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentWillMount" value="&#10;componentWillMount() {&#10;    $END$&#10;}&#10;" description="Invoked once, both on the client and server, immediately before the initial rendering occurs" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentDidMount" value="&#10;componentDidMount() {&#10;    $END$&#10;}&#10;" description="Invoked once, only on the client (not on the server), immediately after the initial rendering occurs." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentWillReceiveProps" value="&#10;componentWillReceiveProps(nextProps) {&#10;    $END$&#10;}&#10;" description="Invoked when a component is receiving new props. This method is not called for the initial render." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="shouldComponentUpdate" value="&#10;shouldComponentUpdate(nextProps, nextState) {&#10;    $END$&#10;}&#10;" description="Invoked before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentWillUpdate" value="&#10;componentWillUpdate(nextProps, nextState) {&#10;    $END$&#10;}&#10;" description="Invoked immediately before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentDidUpdate" value="&#10;componentDidUpdate(prevProps, prevState) {&#10;    $END$&#10;}&#10;" description="Invoked immediately after the component's updates are flushed to the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentWillUnmount" value="&#10;componentWillUnmount() {&#10;    $END$&#10;}&#10;" description="Invoked immediately before a component is unmounted from the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="componentDidCatch" value="componentDidCatch(error, info) {&#10; $END$&#10;}&#10;" description="Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="getDerivedStateFromProps" value="static getDerivedStateFromProps(nextProps, prevState) {&#10; $END$&#10;}&#10;" description="Invoked after a component is instantiated as well as when it receives new props." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="getSnapshotBeforeUpdate" value="getSnapshotBeforeUpdate(prevProps, prevState) {&#10; $END$&#10;}&#10;" description="Invoked right before the most recently rendered output is committed to e.g. the DOM. It enables your component to capture current values" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="classreact" value="import React, { Component } from 'react';&#10;&#10;class $TM_FILENAME_BASE$ extends Component {&#10; render() {&#10;  return (&#10;   &lt;div&gt;&#10;    $END$&#10;   &lt;/div&gt;&#10;  );&#10; }&#10;}&#10;&#10;export default $TM_FILENAME_BASE$;" description="Creates a React component class with ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(filenameWithoutExtension()))" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="classreactpure" value="import React, { PureComponent } from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;class $TM_FILENAME_BASE$ extends PureComponent {&#10; render() {&#10;  return (&#10;   &lt;div&gt;&#10;    $END$&#10;   &lt;/div&gt;&#10;  );&#10; }&#10;}&#10;&#10;export default $TM_FILENAME_BASE$;" description="Creates a React pure component class with PropTypes and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(filenameWithoutExtension()))" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="impbind" value="import bind from 'cached-bind';" description="import bind" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="binc" value="bind(this,this.$END$)" description="bind(" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="impropTypes" value="import PropTypes from 'prop-types';" description="import PropTypes from 'prop-types';" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sp" value="static propTypes = {&#10;};&#10;&#10;static defaultProps = {&#10;};" description="static propTypes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="imppure" value="import pureRender from 'pure-render-decorator';" description="import pureRender" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="impdeepPureRender" value="import deepPureRender from 'lib/deepPureRender';" description="import deepPureRender" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

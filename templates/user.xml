@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="impImmutable" value="import Immutable from 'seamless-immutable';" description="import Immutable" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

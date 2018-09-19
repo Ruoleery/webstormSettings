@@ -1,0 +1,18 @@
+<templateSet group="jest">
+  <template name="describe" value="describe('$END$', () =&gt; {&#10;  test('', () =&gt; {&#10;      &#10;  });&#10;});" description="describe('$END$', () =&gt; {" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="test('$END$', () =&gt; {&#10;    &#10;});" description="test('$END$', () =&gt; {" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="testreact" value="import React from 'react';&#10;import { mount } from 'enzyme';&#10;import { renderToJson } from 'enzyme-to-json';&#10;import $NAME$ from '../index';&#10;&#10;describe('$NAME$', () =&gt; {&#10;  test('基本', () =&gt; {&#10;    const wrapper = mount(&#10;      &lt;$NAME$&#10;        $END$&#10;      /&gt;,&#10;    );&#10;  });&#10;});" description="测试 React 组件" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
