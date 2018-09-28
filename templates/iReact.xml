@@ -124,4 +124,9 @@
       <option name="ES6_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="impclassnames" value="import classnames from 'classnames';" description="import classnames" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
