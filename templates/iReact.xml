@@ -99,7 +99,7 @@
       <option name="ES6_EXPRESSION" value="true" />
     </context>
   </template>
-  <template name="impropTypes" value="import PropTypes from 'prop-types';" description="import PropTypes from 'prop-types';" toReformat="false" toShortenFQNames="true">
+  <template name="imppropTypes" value="import PropTypes from 'prop-types';" description="import PropTypes from 'prop-types';" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="ES6_STATEMENT" value="true" />
     </context>
