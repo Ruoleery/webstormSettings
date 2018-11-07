@@ -129,7 +129,7 @@
       <option name="ES6_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="impintl" value="import intl from '@ircloud/i18n';&#10;import IntlTypes from 'locales_conf/const';" description="intl" toReformat="false" toShortenFQNames="true">
+  <template name="impintl" value="import intl from '@ircloud/i18n';&#10;import IntlTypes from 'locales_conf/IntlTypes';" description="intl" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="ES6_STATEMENT" value="true" />
     </context>
