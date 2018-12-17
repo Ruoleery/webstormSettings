@@ -12,5 +12,9 @@
       <CLASSES />
       <SOURCES />
     </library>
+    <library name="@types/wx-js-sdk-dt" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
   </component>
 </application>
