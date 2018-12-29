@@ -139,4 +139,9 @@
       <option name="ES6_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="zzz" value="/** $END$ */" description="注释" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ECMAScript6" value="true" />
+    </context>
+  </template>
 </templateSet>
