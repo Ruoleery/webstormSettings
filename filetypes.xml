@@ -6,9 +6,8 @@
       <mapping pattern="host" type="PLAIN_TEXT" />
       <mapping pattern="aaaaaaa" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
-      <removed_mapping ext="wxml" approved="true" type="HTML" />
+      <removed_mapping ext="wxml" approved="true" type="Vue.js" />
       <removed_mapping ext="wxss" approved="true" type="CSS" />
-      <removed_mapping ext="less" approved="true" type="WXSS" />
       <removed_mapping ext="md" approved="true" type="Markdown" />
     </extensionMap>
   </component>
